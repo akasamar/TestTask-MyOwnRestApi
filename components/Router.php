@@ -16,7 +16,7 @@ class Router
 		if (!empty($_SERVER['REQUEST_URI']))
 			$uri = trim($_SERVER['REQUEST_URI'], '/');
 		if (empty($uri))
-			header('Location: /');
+			header('Location: /signup');
 		$uri = strtok($uri, '?');
 		return $uri;
 	}
