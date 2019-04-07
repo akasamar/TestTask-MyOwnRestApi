@@ -1,7 +1,7 @@
 <?php
-	ini_set('error_reporting', E_ALL);
-	ini_set('display_errors', 1);
-	ini_set('display_startup_errors', 1);
+	//ini_set('error_reporting', E_ALL);
+	//ini_set('display_errors', 1);
+	//ini_set('display_startup_errors', 1);
 
 	header('Content-Type: application/json');
 
@@ -10,7 +10,7 @@
 	require_once(ROOT.'/components/Router.php');
 	require_once(ROOT.'/components/Db.php');
 	require_once(ROOT.'/components/Helper.php');
-	//require_once(ROOT.'/configs/install.php');
+	require_once(ROOT.'/configs/install.php');
 
 	if (!Db::$connection)
 		Db::getConnection();
