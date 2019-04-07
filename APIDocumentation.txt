@@ -1,8 +1,8 @@
-SHORT MANUAL FOR MY TEST API
+SHORT MANUAL FOR MY REST API 
 
 
-*I wanna that you pay attention to http methods when will send requrest to the server.
-*All requests you can sent in json form and get back result in same. Use POSTMAN.
+*I wanna that you pay attention to http methods when will send request to the server.
+*All requests you can send in json form and get back result in same. Use POSTMAN.
 *Strictly follow the rules which I wrote bellow, don't try write more or less parameters of requests
 if it doesn't need one. Otherwise you will get error :(
 
@@ -31,16 +31,17 @@ For example:
 	"password": "12345"
 }
 
-You will get two tokens - access and refresh and them time of life which working almost like in real api.
+You will get two tokens - access and refresh, their work too close to real api \.
 If the time one of tokens will expire that will refresh both and you will need to reauthorize.
-If you autorize tokens will change themselfs automatically to maintain safety.
+If you autorize tokens will change themselves automatically to maintain safety.
 
 2)For autorization and get tokens use the same form above 
+
 /signin
 - email
 - password
 
-3) For creating new task use your token from registration or autorization
+3) For creating new task use your token from registration or autorization form
 
 /tasks
 - token
