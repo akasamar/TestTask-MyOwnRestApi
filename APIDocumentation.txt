@@ -1,0 +1,78 @@
+SHORT MANUAL FOR MY TEST API
+
+
+*I wanna that you pay attention to http methods when will send requrest to the server.
+*All requests you can sent in json form and get back result in same. Use POSTMAN.
+*Strictly follow the rules which I wrote bellow, don't try write more or less parameters of requests
+if it doesn't need one. Otherwise you will get error :(
+
+
+POST /signup - Registration
+GET /signin - Autorization
+
+GET    /tasks - Get Task list
+POST   /tasks - Create task list
+PUT    /tasks - Make mark as done for given task
+DELETE /tasks - Delete given task by id
+
+
+
+
+
+1)At first you have to make registration. You need to input 2 parameters.
+
+/signup
+- email
+- password
+
+For example:
+{
+	"email": "123@i.ua",
+	"password": "12345"
+}
+
+You will get two tokens - access and refresh and them time of life which working almost like in real api.
+If the time one of tokens will expire that will refresh both and you will need to reauthorize.
+If you autorize tokens will change themselfs automatically to maintain safety.
+
+2)For autorization and get tokens use the same form above 
+/signin
+- email
+- password
+
+3) For creating new task use your token from registration or autorization
+
+/tasks
+- token
+- title (any)
+- priority (only - low, normal, high)
+
+4) Get a list of your or someone tasks using
+
+/tasks
+- email
+
+ or
+
+ /tasks
+- email
+- sort_option (only - priority, title, date, mark)
+- order_by (only - asc, desc)
+
+For example:
+{
+	"email": "1234@i.ua",
+	"sort_option": "date",
+	"order_by": "asc"
+}
+
+5) Your tasks which have a status as 'mark is done' you can get in your task list. For changing one use
+
+/tasks
+- token
+- mark_task_id
+
+6) And the last one. If you wanna delete some of your tasks just use 
+
+- token
+- delete_task_id
