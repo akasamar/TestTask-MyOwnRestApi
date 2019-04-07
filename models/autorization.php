@@ -1,5 +1,4 @@
 <?php 
-	//сделать чтобы была одна функция но разные входы зависящие от методов пост гет
 	class Autorization
 	{
 		private function getMemberCount($email)
