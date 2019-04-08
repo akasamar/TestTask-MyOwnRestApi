@@ -32,7 +32,7 @@ For example:
 }
 
 You will get two tokens - access and refresh, their work too close to real api \.
-If the time one of tokens will expire that will refresh both and you will need to reauthorize.
+If the time one of tokens will expire that refresh both and you will need to reauthorize.
 If you autorize tokens will change themselves automatically to maintain safety.
 
 2)For autorization and get tokens use the same form above 
@@ -67,7 +67,7 @@ For example:
 	"order_by": "asc"
 }
 
-5) Your tasks which have a status as 'mark is done' you can get in your task list. For changing one use
+5) Your tasks which have a status as 'mark is done' you can get in your task list. For changing one use:
 
 /tasks
 - token
