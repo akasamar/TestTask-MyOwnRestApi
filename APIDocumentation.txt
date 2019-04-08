@@ -1,7 +1,7 @@
 SHORT MANUAL FOR MY REST API 
 
 
-*I wanna that you pay attention to http methods when will send request to the server.
+*I wanna that you pay attention to http methods when you send request to the server.
 *All requests you can send in json form and get back result in same. Use POSTMAN.
 *Strictly follow the rules which I wrote bellow, don't try write more or less parameters of requests
 if it doesn't need one. Otherwise you will get error :(
