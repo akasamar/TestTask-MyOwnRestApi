@@ -67,7 +67,6 @@ class Task
 			}
 			if (($i + 1) == $size)
 			{
-				echo "Im dasljdklsajdl;asjkdlk;ajslkdjaslk";
 				$count++;
 				$newArray['page' . $count] = $addArray;
 				break;
